@@ -1,20 +1,23 @@
-/**
- * Main class for the Book My Stay application.
- * This demonstrates the entry point of the program
- * and prints a welcome message to the console.
- *
- * @author Falcon
- * @version 1.0
- */
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("=================================");
-        System.out.println("       Book My Stay App          ");
-        System.out.println("    Hotel Booking System v1.0    ");
-        System.out.println("=================================");
+        // UC1 - Welcome Message
+        System.out.println("Welcome to BookMyStayApp!");
+        System.out.println("Your simple hotel booking system\n");
 
-        System.out.println("Welcome to the Hotel Booking Application!");
+        // UC2 - Display Available Rooms
+        System.out.println("Available Rooms:");
+
+        String[] rooms = {
+                "Room 101 - Single Room",
+                "Room 102 - Double Room",
+                "Room 201 - Deluxe Room",
+                "Room 202 - Suite Room"
+        };
+
+        for (String room : rooms) {
+            System.out.println(room);
+        }
     }
 }
